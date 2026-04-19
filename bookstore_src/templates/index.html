@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block container %}
+<main>
+    <div id="mainLeft">
+        <h1 class="welcomeText">
+            Welcome to Event Horizon Books, your portal to the universe of science fiction.
+        </h1>
+
+        <p class="welcomeText">
+            From golden-age classics to cutting-edge cyberpunk, we carry the best sci-fi literature across every subgenre.
+        </p>
+        <p class="welcomeText">
+            Whether you're charting the far reaches of space opera or diving into hard science, we have the book for you.
+        </p>
+        <p class="welcomeText">
+            Explore our catalog and discover your next great read at prices that won't break the light-speed barrier.
+        </p>
+    </div>
+
+    <div id="mainRight">
+        <h1>Shop by category:</h1>
+        <div id="categorySelections">
+            {% for category in categories %}
+            <div class="category">
+                <p>
+                    <a href="{{ url_for('category', categoryId=category.categoryId) }}">
+                        {{ category.categoryName }}
+                    </a>
+                </p>
+
+                <a href="{{ url_for('category', categoryId=category.categoryId) }}">
+                    <img class="categoryImage"
+                         src="{{ url_for('static', filename='images/categories/' + category.categoryImage) }}"
+                         alt="{{ category.categoryName }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}

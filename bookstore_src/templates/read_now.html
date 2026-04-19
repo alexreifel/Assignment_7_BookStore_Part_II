@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main>
+    <section id="catLeft">
+        <div class="readNowBadge">
+            <p class="readNowBadgeTitle">Read Now</p>
+            <p class="readNowBadgeCount">{{ books|length }} books available</p>
+        </div>
+
+        {% for cat in categories %}
+            <p class="notSelectedCategory">
+                <a href="{{ url_for('category', categoryId=cat.categoryId) }}">
+                    {{ cat.categoryName }}
+                </a>
+            </p>
+        {% endfor %}
+    </section>
+
+    <section id="catRight">
+        <div class="readNowHeader">
+            <h1>Available to Read Now</h1>
+            <p>These titles are ready for immediate reading.</p>
+        </div>
+
+        {% for book in books %}
+        <div class="book">
+            <div class="bookPlaceholder">
+                <a href="{{ url_for('book_detail', bookId=book.bookId) }}">
+                    {{ book.title }}
+                </a>
+            </div>
+
+            <div class="bookDetailBox">
+                <p class="bookTitle">
+                    <a href="{{ url_for('book_detail', bookId=book.bookId) }}">
+                        {{ book.title }}
+                    </a>
+                </p>
+                <p class="bookDetail">by {{ book.author }}</p>
+                <p class="bookDetail">{{ book.categoryName }}</p>
+                <p class="bookPrice">${{ '%.2f'|format(book.price) }}</p>
+
+                <a class="actionButton cartButton" href="#" data-book-id="{{ book.bookId }}">Add to cart</a>
+                <span class="readNowTag">Read Now</span>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

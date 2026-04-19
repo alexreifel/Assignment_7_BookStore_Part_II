@@ -1,0 +1,490 @@
+/* Styles used on multiple pages */
+
+body {
+    max-width: 1160px;
+    font: 1em normal Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #0a0e17;
+    margin: 0 auto;
+}
+
+a {
+    color: #00b4d8;
+}
+
+/* rules for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+#leftHeader a {
+    text-decoration: none;
+}
+
+.siteLogo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00b4d8;
+    margin-top: 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.siteLogo span {
+    color: #e0e0e0;
+}
+
+/* rules for the center header */
+#searchBoxForm {
+    margin-top: 30px;
+    display: flex;
+}
+#searchBox {
+    height: 20px;
+    background-color: #141b2d;
+    color: #e0e0e0;
+    border: 1px solid #1e2a45;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.dropdownSelect {
+    width: 189px;
+    padding: 5px;
+    background-color: #00b4d8;
+    color: #0a0e17;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 5px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #141b2d;
+    border: 1px solid #1e2a45;
+    text-align: center;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.dropdownContent a:hover {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+/* rules for the right header */
+
+#rightHeader {
+    display: flex;
+    margin-top: 40px;
+}
+
+#cartCount {
+    width: 150px;
+    margin: 8px 0 0 10px;
+}
+
+.loginButton {
+    background-color: #00b4d8;
+    width: 50px;
+    height: 30px;
+    margin: 4px auto 0 auto;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+}
+
+.loginButton a {
+    color: #0a0e17;
+    font-weight: bold;
+    text-decoration: none;
+}
+.loginButton a:hover {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* rules for the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1e2a45;
+    margin-left: 10px;
+    padding: 15px 0;
+    font-size: 0.8em;
+    color: #8892a8;
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 10px;
+    width: 300px;
+}
+
+#footerLeft a {
+    padding-top: 12px;
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 80px;
+}
+
+#notFoundMessage {
+    color: #ff6b6b;
+}
+
+.commandButton {
+    height: 30px;
+    width: 150px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #00b4d8;
+    font-size: smaller;
+    color: #0a0e17;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.submitButton {
+    height: 18px;
+    border-radius: 8px;
+    border: none;
+    margin: 6px 0 0 4px;
+    text-align: center;
+    background-color: #00b4d8;
+    color: #0a0e17;
+    font-weight: bold;
+    font-size: 0.875em;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 5px 0 0 10px;
+    border-top: 1px solid #1e2a45;
+    border-left: 1px solid #1e2a45;
+    border-right: 1px solid #1e2a45;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #00b4d8;
+}
+
+/* Styles only used on the index page */
+/* Styles used on the left hand Welcome text section */
+#mainLeft {
+    width: 550px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#mainLeft p {
+    font-size: 120%;
+}
+
+.welcomeText {
+    max-width: 400px;
+}
+
+/* Styles used on the right hand Category section */
+#mainRight {
+    max-width: 600px;
+    border-left: 1px solid #1e2a45;
+    padding: 20px 0;
+    background-color: #101828;
+    text-align: center;
+}
+
+#categorySelections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 299px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #00b4d8;
+    font-weight: bold;
+}
+
+.category a {
+    text-decoration: none;
+    color: #00b4d8;
+}
+
+.categoryImage {
+    width: 200px;
+    height: 140px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #00b4d8;
+    border-radius: 8px;
+}
+
+/* Styles used on the category page */
+/* Styles used for the left hand navigation section */
+
+#catLeft {
+    width: 500px;
+    border-right: 1px solid #1e2a45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notSelectedCategory {
+    height: 30px;
+    width: 150px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #00b4d8;
+}
+
+.notSelectedCategory a {
+    color: #0a0e17;
+    font-size: smaller;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.selectedCategory {
+    height: 30px;
+    width: 150px;
+    border: 1px solid #00b4d8;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #00b4d8;
+    font-size: smaller;
+}
+
+/* styles for the righthand section that shows all the books */
+
+#catRight {
+    padding: 20px 20px 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #101828;
+}
+
+.book {
+    width: 350px;
+    margin: 30px;
+    display: flex;
+    background-color: #141b2d;
+    border: 1px solid #1e2a45;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bookPlaceholder {
+    width: 120px;
+    min-height: 160px;
+    background: linear-gradient(135deg, #1e2a45 0%, #0a0e17 100%);
+    border-right: 1px solid #1e2a45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00b4d8;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.bookPlaceholder a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.bookDetailBox {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875em;
+}
+
+.bookTitle {
+    font-weight: bold;
+}
+
+.bookTitle a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.bookTitle a:hover {
+    color: #00b4d8;
+}
+
+.bookDetail {
+    margin-top: 4px;
+    font-size: 0.875em;
+    color: #8892a8;
+}
+
+.bookPrice {
+    margin-top: 4px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.actionButton {
+    height: 20px;
+    width: 70px;
+    border-radius: 8px;
+    margin-top: 4px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #00b4d8;
+    color: #0a0e17;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cartButton {
+    width: 140px;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.actionButton.inCart {
+    background-color: transparent;
+    color: #00b4d8;
+    border: 1px solid #00b4d8;
+    line-height: 18px;
+}
+
+/* Read Now header button in navbar */
+.readNowButton {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    width: 70px;
+    height: 30px;
+    margin: 4px 6px 0 6px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.4);
+}
+
+.readNowButton a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+.readNowButton:hover {
+    box-shadow: 0 0 14px rgba(0, 180, 216, 0.7);
+}
+
+/* Read Now page styles */
+.readNowBadge {
+    margin: 30px 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.3);
+}
+
+.readNowBadgeTitle {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.readNowBadgeCount {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.readNowHeader {
+    width: 100%;
+    padding: 15px 0 5px 10px;
+}
+
+.readNowHeader p {
+    color: #8892a8;
+    margin-top: 4px;
+    font-size: 0.95em;
+}
+
+.readNowTag {
+    display: inline-block;
+    align-self: flex-start;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 180, 216, 0.3);
+}
+
+.bookDetailPlaceholder {
+    width: 250px;
+    height: 350px;
+    background: linear-gradient(135deg, #1e2a45 0%, #0a0e17 100%);
+    border: 1px solid #1e2a45;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00b4d8;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+}
